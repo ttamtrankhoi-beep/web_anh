@@ -1,16 +1,17 @@
 :root {
-  --navy: #061a2f;
-  --navy-2: #0c2d4d;
-  --blue: #1f7ae0;
-  --cyan: #60d5f8;
-  --white: #ffffff;
-  --ink: #132238;
-  --muted: #64748b;
-  --line: #dce6f2;
-  --soft: #f5f9fd;
-  --shadow: 0 24px 70px rgba(6, 26, 47, 0.14);
-  --radius: 8px;
-  --container: 1180px;
+    --navy: #061a2f;
+    --navy-2: #0c2d4d;
+    --blue: #1f7ae0;
+    --cyan: #60d5f8;
+    --white: #ffffff;
+    --ink: #132238;
+    --muted: #64748b;
+    --line: #dce6f2;
+    --soft: #f5f9fd;
+    --shadow: 0 24px 70px rgba(6, 26, 47, 0.14);
+    --radius: 8px;
+    --container: 1180px;
+    --danger: #e5484d
 }
 
 * {
@@ -28,7 +29,12 @@ body {
   background: var(--white);
   line-height: 1.6;
 }
-
+.pl-2 {
+    padding-left: 0.5rem;
+}
+.pr-2 {
+    padding-right: 0.5rem;
+}
 body.menu-open {
   overflow: hidden;
 }
@@ -217,7 +223,7 @@ svg {
   text-transform: uppercase;
   letter-spacing: 0.12em;
 }
-
+.text-right{text-align:right;}
 .hero h1,
 .section-heading h2,
 .contact-copy h2 {
@@ -628,7 +634,7 @@ h3 {
 }
 
 .form-group {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 label {
@@ -663,14 +669,14 @@ textarea:focus {
 
 .form-group.invalid input,
 .form-group.invalid textarea {
-  border-color: #e5484d;
+  border-color: var(--danger);
 }
 
 .error-message {
   display: block;
   min-height: 19px;
   margin-top: 6px;
-  color: #e5484d;
+  color: var(--danger);
   font-size: 0.84rem;
 }
 
@@ -846,4 +852,10 @@ textarea:focus {
   .contact-form {
     padding: 24px;
   }
+}
+.d-flex{
+    display:flex;
+}
+.align-flex-center{
+    align-items:center;
 }
