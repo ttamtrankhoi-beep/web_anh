@@ -112,10 +112,10 @@ contactForm.addEventListener("submit", (event) => {
 
   if (!validateForm()) {
     return;
-  }
-
-  contactForm.reset();
-  formStatus.textContent = "Cảm ơn bạn! Thông tin đã được gửi thành công.";
+    }
+    contactForm.submit();
+  //contactForm.reset();
+  //formStatus.textContent = "Cảm ơn bạn! Thông tin đã được gửi thành công.";
 });
 
 contactForm.querySelectorAll("input, textarea").forEach((field) => {
