@@ -6,7 +6,7 @@ const navLinks = document.querySelectorAll(".nav-links a, .nav-panel .btn");
 const revealElements = document.querySelectorAll(".reveal");
 const contactForm = document.querySelector("#contactForm");
 const formStatus = document.querySelector("#formStatus");
-
+const slider = document.querySelector("[data-slider]");
 function closeMenu() {
   body.classList.remove("menu-open");
   menuToggle.setAttribute("aria-expanded", "false");
@@ -124,3 +124,37 @@ contactForm.querySelectorAll("input, textarea").forEach((field) => {
     formStatus.textContent = "";
   });
 });
+if (slider) {
+    const track = slider.querySelector(".slider-track");
+    const dots = Array.from(slider.querySelectorAll("[data-slider-dot]"));
+    const prevButton = document.querySelector("[data-slider-prev]");
+    const nextButton = document.querySelector("[data-slider-next]");
+    const slideCount = slider.querySelectorAll(".project-grid").length;
+    let currentSlide = 0;
+
+    const updateSlider = () => {
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+        dots.forEach((dot, index) => {
+            const isActive = index === currentSlide;
+            dot.classList.toggle("is-active", isActive);
+            dot.setAttribute("aria-current", isActive ? "true" : "false");
+        });
+    };
+
+    const goToSlide = (index) => {
+        currentSlide = (index + slideCount) % slideCount;
+        updateSlider();
+    };
+
+    prevButton.addEventListener("click", () => goToSlide(currentSlide - 1));
+    nextButton.addEventListener("click", () => goToSlide(currentSlide + 1));
+
+    dots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+            goToSlide(Number(dot.dataset.sliderDot));
+        });
+    });
+
+    updateSlider();
+}
