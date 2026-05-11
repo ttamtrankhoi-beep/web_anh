@@ -124,37 +124,58 @@ contactForm.querySelectorAll("input, textarea").forEach((field) => {
     formStatus.textContent = "";
   });
 });
-if (slider) {
-    const track = slider.querySelector(".slider-track");
-    const dots = Array.from(slider.querySelectorAll("[data-slider-dot]"));
-    const prevButton = document.querySelector("[data-slider-prev]");
-    const nextButton = document.querySelector("[data-slider-next]");
-    const slideCount = slider.querySelectorAll(".project-grid").length;
-    let currentSlide = 0;
+document.addEventListener("DOMContentLoaded", function () {
 
-    const updateSlider = () => {
-        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    const swiper=new Swiper(".mySwiper", {
 
-        dots.forEach((dot, index) => {
-            const isActive = index === currentSlide;
-            dot.classList.toggle("is-active", isActive);
-            dot.setAttribute("aria-current", isActive ? "true" : "false");
-        });
-    };
+        slidesPerView: 3,
+        grid: {
+            rows: 2,
+            fill: 'row'
+        },
+       
+        spaceBetween: 20,
 
-    const goToSlide = (index) => {
-        currentSlide = (index + slideCount) % slideCount;
-        updateSlider();
-    };
+        breakpoints: {
 
-    prevButton.addEventListener("click", () => goToSlide(currentSlide - 1));
-    nextButton.addEventListener("click", () => goToSlide(currentSlide + 1));
+            // mobile
+            0: {
+                slidesPerView: 1,
+                grid: {
+                    rows: 1
+                }
+            },
 
-    dots.forEach((dot) => {
-        dot.addEventListener("click", () => {
-            goToSlide(Number(dot.dataset.sliderDot));
-        });
+            // tablet
+            768: {
+                slidesPerView: 2,
+                grid: {
+                    rows: 2
+                },
+                 pagination: {
+                    el: ".slider-dots",
+                    clickable: true,
+                },
+            },
+
+            // desktop
+            992: {
+                slidesPerView: 3,
+                grid: {
+                    rows: 2
+                },
+                pagination: {
+                    el: ".slider-dots",
+                    clickable: true,
+                }
+            }
+        }
+    });
+    document.getElementById("btnNext").addEventListener("click", function () {
+        swiper.slideNext();
     });
 
-    updateSlider();
-}
+    document.getElementById("btnPrev").addEventListener("click", function () {
+        swiper.slidePrev();
+    });
+});

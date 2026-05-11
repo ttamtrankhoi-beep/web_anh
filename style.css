@@ -65,7 +65,7 @@ svg {
     align-items: end;
     justify-content: space-between;
     gap: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
 }
 .section-pad {
   padding: 96px 0;
@@ -998,20 +998,21 @@ textarea:focus {
     gap: 10px;
     margin-top: 24px;
 }
-.slider-dot {
-    width: 10px;
-    height: 10px;
-    padding: 0;
-    border: 0;
-    border-radius: 999px;
-    background: #c6d1de;
-    cursor: pointer;
-    transition: width 160ms ease, background 160ms ease;
-}
-    .slider-dot.is-active {
-        width: 30px;
-        background: var(--blue);
+    .slider-dots span {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        border: 0;
+        border-radius: 999px;
+        background: rgb(198, 209, 222);
+        cursor: pointer;
+        transition: width 160ms ease, background 160ms ease;
+        opacity:1;
     }
+        .slider-dots span.swiper-pagination-bullet-active {
+            width: 30px;
+            background: var(--blue);
+        }
 .slider-controls {
     display: flex;
     gap: 10px;
@@ -1024,7 +1025,7 @@ textarea:focus {
     place-items: center;
     width: 44px;
     height: 44px;
-    border: 1px solid #d7e0ec;
+    border:none;
     border-radius: 8px;
     background: #fff;
     color: #172033;
@@ -1032,6 +1033,11 @@ textarea:focus {
     box-shadow: 0 10px 28px rgba(27, 39, 65, 0.08);
     transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
+    .slider-button:hover {
+        transform: translateY(-2px);
+        background:var(--cyan);color:var(--white);
+        box-shadow: 0 14px 36px rgba(27, 39, 65, 0.12);
+    }
     .slider-button span {
         display: block;
         margin-top: -2px;
