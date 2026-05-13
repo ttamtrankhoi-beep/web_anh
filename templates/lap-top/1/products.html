@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản phẩm | TechNova Laptop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header compact">
+    <div class="top-bar">
+      <span>Đổi trả 7 ngày</span>
+      <span>Giao hàng toàn quốc</span>
+    </div>
+    <nav class="navbar container">
+      <a class="logo" href="index.html"><span class="logo-mark">TN</span><span>TechNova</span></a>
+      <button class="menu-toggle" type="button" aria-label="Mở menu"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="products.html">Sản phẩm</a>
+        <a href="index.html#gaming">Gaming</a>
+        <a href="index.html#office">Văn phòng</a>
+        <a href="index.html#news">Tin tức</a>
+      </div>
+      <form class="search-form" role="search">
+        <input type="search" placeholder="Tìm laptop..." aria-label="Tìm kiếm sản phẩm">
+        <button type="submit" aria-label="Tìm kiếm">⌕</button>
+      </form>
+      <a class="cart-link" href="cart.html"><span class="cart-icon">🛒</span><span class="cart-count" data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Product catalog</p>
+        <h1>Danh mục laptop</h1>
+        <p>Lọc nhanh theo hãng, giá, RAM và CPU để chọn đúng cấu hình.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container catalog-layout">
+        <aside class="filter-sidebar">
+          <div class="filter-header">
+            <h2>Bộ lọc</h2>
+            <button type="button" data-clear-filters>Xóa lọc</button>
+          </div>
+          <div class="filter-group">
+            <h3>Hãng</h3>
+            <label><input type="checkbox" name="brand" value="Dell"> Dell</label>
+            <label><input type="checkbox" name="brand" value="Lenovo"> Lenovo</label>
+            <label><input type="checkbox" name="brand" value="ASUS"> ASUS</label>
+            <label><input type="checkbox" name="brand" value="HP"> HP</label>
+            <label><input type="checkbox" name="brand" value="Acer"> Acer</label>
+            <label><input type="checkbox" name="brand" value="Toshiba"> Toshiba</label>
+            <label><input type="checkbox" name="brand" value="Sony"> Sony</label>
+          </div>
+          <div class="filter-group">
+            <h3>Giá</h3>
+            <label><input type="radio" name="price" value="0-20000000"> Dưới 20 triệu</label>
+            <label><input type="radio" name="price" value="20000000-30000000"> 20 - 30 triệu</label>
+            <label><input type="radio" name="price" value="30000000-999000000"> Trên 30 triệu</label>
+          </div>
+          <div class="filter-group">
+            <h3>RAM</h3>
+            <label><input type="checkbox" name="ram" value="8GB"> 8GB</label>
+            <label><input type="checkbox" name="ram" value="16GB"> 16GB</label>
+            <label><input type="checkbox" name="ram" value="32GB"> 32GB</label>
+          </div>
+          <div class="filter-group">
+            <h3>CPU</h3>
+            <label><input type="checkbox" name="cpu" value="Intel"> Intel</label>
+            <label><input type="checkbox" name="cpu" value="AMD"> AMD</label>
+            <label><input type="checkbox" name="cpu" value="Snapdragon"> Snapdragon</label>
+          </div>
+        </aside>
+
+        <div class="catalog-content">
+          <div class="catalog-toolbar">
+            <div>
+              <p class="eyebrow">Laptop chính hãng</p>
+              <h2 data-result-title>Tất cả sản phẩm</h2>
+            </div>
+            <select data-sort aria-label="Sắp xếp sản phẩm">
+              <option value="popular">Phổ biến</option>
+              <option value="price-asc">Giá thấp đến cao</option>
+              <option value="price-desc">Giá cao đến thấp</option>
+            </select>
+          </div>
+          <div class="product-grid catalog-grid" data-catalog></div>
+          <div class="pagination" data-pagination></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© 2026 TechNova Laptop. All rights reserved.</p>
+      <a href="checkout.html">Thanh toán</a>
+    </div>
+  </footer>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

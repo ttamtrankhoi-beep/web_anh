@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt hàng | TechNova Laptop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header compact">
+    <div class="top-bar">
+      <span>Thanh toán an toàn</span>
+      <span>Nhân viên xác nhận trong 30 phút</span>
+    </div>
+    <nav class="navbar container">
+      <a class="logo" href="index.html"><span class="logo-mark">TN</span><span>TechNova</span></a>
+      <button class="menu-toggle" type="button" aria-label="Mở menu"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="products.html">Sản phẩm</a>
+        <a href="cart.html">Giỏ hàng</a>
+        <a class="active" href="checkout.html">Đặt hàng</a>
+      </div>
+      <form class="search-form" role="search">
+        <input type="search" placeholder="Tìm laptop..." aria-label="Tìm kiếm sản phẩm">
+        <button type="submit" aria-label="Tìm kiếm">⌕</button>
+      </form>
+      <a class="cart-link" href="cart.html"><span class="cart-icon">🛒</span><span class="cart-count" data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Checkout</p>
+        <h1>Thông tin đặt hàng</h1>
+        <p>Điền thông tin liên hệ để TechNova xác nhận đơn hàng của bạn.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container checkout-layout">
+        <form class="checkout-form" data-checkout-form novalidate>
+          <div class="form-grid">
+            <label>
+              <span>Họ tên</span>
+              <input type="text" name="fullname" placeholder="Nguyễn Văn A">
+              <small data-error="fullname"></small>
+            </label>
+            <label>
+              <span>Số điện thoại</span>
+              <input type="tel" name="phone" placeholder="0901234567">
+              <small data-error="phone"></small>
+            </label>
+          </div>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com">
+            <small data-error="email"></small>
+          </label>
+          <label>
+            <span>Địa chỉ</span>
+            <input type="text" name="address" placeholder="Số nhà, đường, phường/xã, quận/huyện">
+            <small data-error="address"></small>
+          </label>
+          <label>
+            <span>Ghi chú</span>
+            <textarea name="note" rows="5" placeholder="Thời gian nhận hàng, yêu cầu xuất hóa đơn..."></textarea>
+          </label>
+          <button class="btn btn-primary full" type="submit">Hoàn tất đặt hàng</button>
+        </form>
+
+        <aside class="cart-summary checkout-summary">
+          <h2>Đơn hàng</h2>
+          <div data-checkout-items class="checkout-items"></div>
+          <div class="summary-total">
+            <span>Tổng thanh toán</span>
+            <strong data-checkout-total>0₫</strong>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© 2026 TechNova Laptop.</p>
+      <a href="products.html">Mua thêm sản phẩm</a>
+    </div>
+  </footer>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

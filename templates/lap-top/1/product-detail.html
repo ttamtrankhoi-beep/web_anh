@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sản phẩm | TechNova Laptop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header compact">
+    <div class="top-bar">
+      <span>Bảo hành chính hãng 24 tháng</span>
+      <span>Hỗ trợ kỹ thuật 24/7</span>
+    </div>
+    <nav class="navbar container">
+      <a class="logo" href="index.html"><span class="logo-mark">TN</span><span>TechNova</span></a>
+      <button class="menu-toggle" type="button" aria-label="Mở menu"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="products.html">Sản phẩm</a>
+        <a href="index.html#gaming">Gaming</a>
+        <a href="index.html#office">Văn phòng</a>
+        <a href="index.html#news">Tin tức</a>
+      </div>
+      <form class="search-form" role="search">
+        <input type="search" placeholder="Tìm laptop..." aria-label="Tìm kiếm sản phẩm">
+        <button type="submit" aria-label="Tìm kiếm">⌕</button>
+      </form>
+      <a class="cart-link" href="cart.html"><span class="cart-icon">🛒</span><span class="cart-count" data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="section">
+      <div class="container product-detail" data-product-detail></div>
+    </section>
+    <section class="section surface">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Gợi ý thêm</p>
+          <h2>Sản phẩm liên quan</h2>
+          <a href="products.html">Xem thêm</a>
+        </div>
+        <div class="product-grid" data-related></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© 2026 TechNova Laptop.</p>
+      <a href="cart.html">Xem giỏ hàng</a>
+    </div>
+  </footer>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

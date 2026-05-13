@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng | TechNova Laptop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header compact">
+    <div class="top-bar">
+      <span>Giữ giá đơn hàng trong 24 giờ</span>
+      <span>Tư vấn cấu hình miễn phí</span>
+    </div>
+    <nav class="navbar container">
+      <a class="logo" href="index.html"><span class="logo-mark">TN</span><span>TechNova</span></a>
+      <button class="menu-toggle" type="button" aria-label="Mở menu"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="products.html">Sản phẩm</a>
+        <a href="index.html#gaming">Gaming</a>
+        <a href="index.html#office">Văn phòng</a>
+        <a href="checkout.html">Đặt hàng</a>
+      </div>
+      <form class="search-form" role="search">
+        <input type="search" placeholder="Tìm laptop..." aria-label="Tìm kiếm sản phẩm">
+        <button type="submit" aria-label="Tìm kiếm">⌕</button>
+      </form>
+      <a class="cart-link active" href="cart.html"><span class="cart-icon">🛒</span><span class="cart-count" data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Shopping cart</p>
+        <h1>Giỏ hàng của bạn</h1>
+        <p>Kiểm tra số lượng và tổng tiền trước khi đặt hàng.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cart-layout">
+        <div class="cart-list" data-cart-list></div>
+        <aside class="cart-summary">
+          <h2>Tóm tắt đơn hàng</h2>
+          <div class="summary-row">
+            <span>Tạm tính</span>
+            <strong data-cart-subtotal>0₫</strong>
+          </div>
+          <div class="summary-row">
+            <span>Phí vận chuyển</span>
+            <strong>Miễn phí</strong>
+          </div>
+          <div class="summary-total">
+            <span>Tổng tiền</span>
+            <strong data-cart-total>0₫</strong>
+          </div>
+          <button class="btn btn-secondary full" type="button" data-update-cart>Cập nhật giỏ hàng</button>
+          <a class="btn btn-primary full" href="checkout.html">Tiến hành đặt hàng</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© 2026 TechNova Laptop.</p>
+      <a href="products.html">Tiếp tục mua sắm</a>
+    </div>
+  </footer>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

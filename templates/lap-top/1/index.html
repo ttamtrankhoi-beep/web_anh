@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNova Laptop | Website bán laptop chuyên nghiệp</title>
+  <meta name="description" content="Template website bán laptop hiện đại bằng HTML, CSS và JavaScript thuần.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar">
+      <span>Miễn phí giao hàng từ 10 triệu</span>
+      <span>Hotline: 1900 9090</span>
+    </div>
+    <nav class="navbar container">
+      <a class="logo" href="index.html" aria-label="TechNova Laptop">
+        <span class="logo-mark">TN</span>
+        <span>TechNova</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a class="active" href="index.html">Trang chủ</a>
+        <a href="products.html">Sản phẩm</a>
+        <a href="#gaming">Gaming</a>
+        <a href="#office">Văn phòng</a>
+        <a href="#news">Tin tức</a>
+      </div>
+      <form class="search-form" role="search">
+        <input type="search" placeholder="Tìm laptop, CPU, RAM..." aria-label="Tìm kiếm sản phẩm">
+        <button type="submit" aria-label="Tìm kiếm">⌕</button>
+      </form>
+      <a class="cart-link" href="cart.html" aria-label="Giỏ hàng">
+        <span class="cart-icon">🛒</span>
+        <span class="cart-count" data-cart-count>0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-slider" data-slider>
+      <article class="slide active">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1800&q=80" alt="Laptop cao cấp trên bàn làm việc">
+        <div class="slide-content container">
+          <p class="eyebrow">Laptop AI 2026</p>
+          <h1>Nâng cấp góc làm việc với laptop hiệu năng cao</h1>
+          <p>Chọn nhanh laptop gaming, đồ họa, văn phòng với bảo hành chính hãng và ưu đãi hấp dẫn.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="products.html">Mua ngay</a>
+            <a class="btn btn-ghost" href="#featured">Xem nổi bật</a>
+          </div>
+        </div>
+      </article>
+      <article class="slide">
+        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=1800&q=80" alt="Laptop gaming với ánh sáng xanh">
+        <div class="slide-content container">
+          <p class="eyebrow">Gaming series</p>
+          <h1>FPS mượt, tản nhiệt khỏe, màn hình sắc nét</h1>
+          <p>Ưu đãi tới 18% cho laptop RTX, RAM 16GB, SSD tốc độ cao.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="products.html">Khám phá</a>
+            <a class="btn btn-ghost" href="#promotions">Ưu đãi</a>
+          </div>
+        </div>
+      </article>
+      <article class="slide">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80" alt="Laptop văn phòng hiện đại">
+        <div class="slide-content container">
+          <p class="eyebrow">Work smart</p>
+          <h1>Mỏng nhẹ cho doanh nghiệp và học tập</h1>
+          <p>Pin bền, bảo mật tốt, thiết kế tối giản cho mọi ngày làm việc.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="products.html">Chọn laptop</a>
+            <a class="btn btn-ghost" href="#office">Văn phòng</a>
+          </div>
+        </div>
+      </article>
+      <div class="slider-dots" data-slider-dots aria-label="Điều hướng banner"></div>
+    </section>
+
+    <section class="brand-section section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Danh mục hãng</p>
+          <h2>Chọn thương hiệu yêu thích</h2>
+        </div>
+        <div class="brand-grid">
+          <a href="products.html?brand=Dell">Dell</a>
+          <a href="products.html?brand=Lenovo">Lenovo</a>
+          <a href="products.html?brand=ASUS">ASUS</a>
+          <a href="products.html?brand=HP">HP</a>
+          <a href="products.html?brand=Acer">Acer</a>
+          <a href="products.html?brand=Toshiba">Toshiba</a>
+          <a href="products.html?brand=Sony">Sony</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="section surface">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Best sellers</p>
+          <h2>Sản phẩm nổi bật</h2>
+          <a href="products.html">Xem tất cả</a>
+        </div>
+        <div class="product-grid" data-products="featured"></div>
+      </div>
+    </section>
+
+    <section id="gaming" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Power mode</p>
+          <h2>Laptop gaming</h2>
+          <a href="products.html?category=gaming">Xem gaming</a>
+        </div>
+        <div class="product-grid" data-products="gaming"></div>
+      </div>
+    </section>
+
+    <section id="office" class="section surface">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Office ready</p>
+          <h2>Laptop văn phòng</h2>
+          <a href="products.html?category=office">Xem văn phòng</a>
+        </div>
+        <div class="product-grid" data-products="office"></div>
+      </div>
+    </section>
+
+    <section id="promotions" class="section promo-section">
+      <div class="container promo-layout">
+        <div>
+          <p class="eyebrow">Khuyến mãi tháng này</p>
+          <h2>Giảm tới 5 triệu khi mua laptop kèm màn hình</h2>
+          <p>Áp dụng cho khách hàng doanh nghiệp, sinh viên và game thủ nâng cấp góc setup.</p>
+          <a class="btn btn-primary" href="products.html">Săn ưu đãi</a>
+        </div>
+        <div class="promo-stat">
+          <span>0%</span>
+          <p>Trả góp qua thẻ tín dụng, duyệt nhanh trong 15 phút.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="section surface">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Tech news</p>
+          <h2>Tin tức công nghệ</h2>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80" alt="Nhóm làm việc với laptop">
+            <div>
+              <span>AI PC</span>
+              <h3>Xu hướng laptop tích hợp NPU cho công việc sáng tạo</h3>
+              <p>Các dòng CPU mới giúp xử lý tác vụ AI tại máy nhanh và riêng tư hơn.</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=900&q=80" alt="Laptop mỏng nhẹ">
+            <div>
+              <span>Tư vấn</span>
+              <h3>Nên chọn RAM 16GB hay 32GB cho laptop năm 2026?</h3>
+              <p>Gợi ý cấu hình theo nhu cầu học tập, văn phòng, thiết kế và lập trình.</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=900&q=80" alt="Bàn phím laptop">
+            <div>
+              <span>Bảo dưỡng</span>
+              <h3>5 cách giữ pin laptop bền trong môi trường làm việc hybrid</h3>
+              <p>Cài đặt sạc, nhiệt độ và thói quen sử dụng ảnh hưởng lớn đến tuổi thọ pin.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="index.html"><span class="logo-mark">TN</span><span>TechNova</span></a>
+        <p>Template website bán laptop chuyên nghiệp, tối ưu cho ecommerce công nghệ.</p>
+      </div>
+      <div>
+        <h3>Danh mục</h3>
+        <a href="products.html">Tất cả laptop</a>
+        <a href="products.html?category=gaming">Laptop gaming</a>
+        <a href="products.html?category=office">Laptop văn phòng</a>
+      </div>
+      <div>
+        <h3>Hỗ trợ</h3>
+        <a href="checkout.html">Đặt hàng</a>
+        <a href="cart.html">Giỏ hàng</a>
+        <a href="#">Chính sách bảo hành</a>
+      </div>
+      <div>
+        <h3>Liên hệ</h3>
+        <p>89 Nguyễn Huệ, Quận 1, TP.HCM</p>
+        <p>support@technova.vn</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
