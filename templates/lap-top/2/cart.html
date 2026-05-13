@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng | Nova Laptop Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Điều hướng chính">
+      <a class="logo" href="index.html"><span class="logo-mark">N</span><span>Nova</span></a>
+      <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">☰</button>
+      <div class="nav-panel">
+        <ul class="nav-links">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="products.html">Sản phẩm</a></li>
+          <li><a href="news.html">Tin tức</a></li>
+          <li><a href="cart.html" class="active">Giỏ hàng</a></li>
+        </ul>
+      </div>
+      <a class="cart-link" href="cart.html"><span class="cart-icon">▣</span><span class="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <div class="container">
+        <span class="eyebrow">Cart</span>
+        <h1>Giỏ hàng của bạn</h1>
+      </div>
+    </section>
+    <section class="section container cart-layout">
+      <div class="cart-items" data-cart-items></div>
+      <aside class="cart-summary">
+        <h2>Tổng đơn hàng</h2>
+        <div class="summary-line"><span>Tạm tính</span><strong data-cart-subtotal>0đ</strong></div>
+        <div class="summary-line"><span>Vận chuyển</span><strong>Miễn phí</strong></div>
+        <div class="summary-total"><span>Tổng tiền</span><strong data-cart-total>0đ</strong></div>
+        <button class="btn btn-secondary update-cart" type="button">Cập nhật giỏ hàng</button>
+        <a class="btn btn-primary" href="checkout.html">Tiến hành đặt hàng</a>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer compact-footer">
+    <p class="copyright">© 2026 Nova Laptop Store.</p>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

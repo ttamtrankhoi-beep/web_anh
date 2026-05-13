@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tin tức công nghệ | Nova Laptop Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Điều hướng chính">
+      <a class="logo" href="index.html"><span class="logo-mark">N</span><span>Nova</span></a>
+      <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">☰</button>
+      <div class="nav-panel">
+        <ul class="nav-links">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="products.html">Sản phẩm</a></li>
+          <li><a href="news.html" class="active">Tin tức</a></li>
+          <li><a href="cart.html">Giỏ hàng</a></li>
+        </ul>
+        <form class="search-box" role="search">
+          <input type="search" placeholder="Tìm bài viết..." aria-label="Tìm kiếm bài viết">
+          <button type="submit" aria-label="Tìm kiếm">⌕</button>
+        </form>
+      </div>
+      <a class="cart-link" href="cart.html"><span class="cart-icon">▣</span><span class="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero news-hero">
+      <div class="container">
+        <span class="eyebrow">Nova Journal</span>
+        <h1>Tin tức, đánh giá và tư vấn laptop mới nhất.</h1>
+        <p>Cập nhật xu hướng AI PC, màn hình OLED, laptop gaming và mẹo chọn máy cho công việc.</p>
+      </div>
+    </section>
+
+    <section class="section container blog-layout">
+      <div>
+        <div class="news-grid blog-grid" data-news-section="all"></div>
+        <nav class="pagination" aria-label="Phân trang tin tức">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">›</a>
+        </nav>
+      </div>
+      <aside class="blog-sidebar">
+        <div class="sidebar-box">
+          <h2>Bài viết nổi bật</h2>
+          <a href="article-detail.html">Top laptop AI PC đáng mua 2026</a>
+          <a href="article-detail.html">OLED hay Mini LED cho designer?</a>
+          <a href="article-detail.html">Checklist mua laptop doanh nghiệp</a>
+        </div>
+        <div class="sidebar-box">
+          <h2>Danh mục tin tức</h2>
+          <a href="#">Đánh giá laptop</a>
+          <a href="#">Tư vấn mua hàng</a>
+          <a href="#">Công nghệ mới</a>
+          <a href="#">Gaming gear</a>
+        </div>
+        <div class="sidebar-box tag-cloud">
+          <h2>Tags công nghệ</h2>
+          <span>AI PC</span><span>OLED</span><span>RTX</span><span>Core Ultra</span><span>Ryzen AI</span>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer compact-footer">
+    <p class="copyright">© 2026 Nova Laptop Store.</p>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản phẩm | Nova Laptop Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Điều hướng chính">
+      <a class="logo" href="index.html"><span class="logo-mark">N</span><span>Nova</span></a>
+      <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">☰</button>
+      <div class="nav-panel">
+        <ul class="nav-links">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="products.html" class="active">Sản phẩm</a></li>
+          <li><a href="news.html">Tin tức</a></li>
+          <li><a href="cart.html">Giỏ hàng</a></li>
+        </ul>
+        <form class="search-box" role="search">
+          <input type="search" placeholder="Tìm laptop..." aria-label="Tìm kiếm sản phẩm">
+          <button type="submit" aria-label="Tìm kiếm">⌕</button>
+        </form>
+      </div>
+      <a class="cart-link" href="cart.html"><span class="cart-icon">▣</span><span class="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <div class="container">
+        <span class="eyebrow">Catalog</span>
+        <h1>Chọn laptop phù hợp với công việc của bạn.</h1>
+      </div>
+    </section>
+
+    <section class="section container catalog-layout">
+      <aside class="filter-sidebar" aria-label="Bộ lọc sản phẩm">
+        <h2>Bộ lọc</h2>
+        <div class="filter-group">
+          <h3>Hãng</h3>
+          <label><input type="checkbox"> Dell</label>
+          <label><input type="checkbox"> Lenovo</label>
+          <label><input type="checkbox"> ASUS</label>
+          <label><input type="checkbox"> HP</label>
+          <label><input type="checkbox"> Acer</label>
+        </div>
+        <div class="filter-group">
+          <h3>Giá</h3>
+          <label><input type="radio" name="price"> Dưới 15 triệu</label>
+          <label><input type="radio" name="price"> 15 - 25 triệu</label>
+          <label><input type="radio" name="price"> Trên 25 triệu</label>
+        </div>
+        <div class="filter-group">
+          <h3>RAM</h3>
+          <label><input type="checkbox"> 8GB</label>
+          <label><input type="checkbox"> 16GB</label>
+          <label><input type="checkbox"> 32GB</label>
+        </div>
+        <div class="filter-group">
+          <h3>CPU</h3>
+          <label><input type="checkbox"> Intel Core Ultra</label>
+          <label><input type="checkbox"> Intel Core i7</label>
+          <label><input type="checkbox"> AMD Ryzen</label>
+        </div>
+      </aside>
+
+      <div class="catalog-content">
+        <div class="catalog-toolbar">
+          <p>Hiển thị 8 sản phẩm</p>
+          <select aria-label="Sắp xếp sản phẩm">
+            <option>Sắp xếp nổi bật</option>
+            <option>Giá tăng dần</option>
+            <option>Giá giảm dần</option>
+          </select>
+        </div>
+        <div class="product-grid catalog-grid" data-product-section="all"></div>
+        <nav class="pagination" aria-label="Phân trang">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">›</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer compact-footer">
+    <p class="copyright">© 2026 Nova Laptop Store.</p>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

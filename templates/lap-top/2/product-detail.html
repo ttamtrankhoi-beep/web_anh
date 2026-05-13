@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sản phẩm | Nova Laptop Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Điều hướng chính">
+      <a class="logo" href="index.html"><span class="logo-mark">N</span><span>Nova</span></a>
+      <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">☰</button>
+      <div class="nav-panel">
+        <ul class="nav-links">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="products.html" class="active">Sản phẩm</a></li>
+          <li><a href="news.html">Tin tức</a></li>
+          <li><a href="cart.html">Giỏ hàng</a></li>
+        </ul>
+        <form class="search-box" role="search">
+          <input type="search" placeholder="Tìm laptop..." aria-label="Tìm kiếm sản phẩm">
+          <button type="submit" aria-label="Tìm kiếm">⌕</button>
+        </form>
+      </div>
+      <a class="cart-link" href="cart.html"><span class="cart-icon">▣</span><span class="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section container product-detail">
+      <div class="gallery">
+        <img class="gallery-main" src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=1200&q=80" alt="NovaBook Pro X1">
+        <div class="thumb-row">
+          <button class="thumb active" data-image="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=1200&q=80"><img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=240&q=80" alt="Góc chính"></button>
+          <button class="thumb" data-image="https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=1200&q=80"><img src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=240&q=80" alt="Góc nghiêng"></button>
+          <button class="thumb" data-image="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=80"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=240&q=80" alt="Không gian làm việc"></button>
+        </div>
+      </div>
+      <article class="detail-info">
+        <span class="badge">Giảm 12%</span>
+        <h1>NovaBook Pro X1 14</h1>
+        <p class="price">32.990.000đ</p>
+        <p class="detail-lead">Laptop cao cấp cho sáng tạo, lập trình và xử lý đa nhiệm với thiết kế nhôm nguyên khối, màn hình 2.8K và pin cả ngày.</p>
+        <dl class="spec-list">
+          <div><dt>CPU</dt><dd>Intel Core Ultra 7 155H</dd></div>
+          <div><dt>RAM</dt><dd>32GB LPDDR5X</dd></div>
+          <div><dt>SSD</dt><dd>1TB NVMe Gen 4</dd></div>
+          <div><dt>VGA</dt><dd>Intel Arc Graphics</dd></div>
+          <div><dt>Màn hình</dt><dd>14 inch 2.8K OLED 120Hz</dd></div>
+        </dl>
+        <div class="quantity-control">
+          <label for="detail-qty">Số lượng</label>
+          <input id="detail-qty" type="number" min="1" value="1">
+        </div>
+        <button class="btn btn-primary add-detail-cart" type="button" data-id="1">Thêm vào giỏ hàng</button>
+      </article>
+    </section>
+
+    <section class="section container">
+      <div class="article-body narrow">
+        <h2>Mô tả sản phẩm</h2>
+        <p>NovaBook Pro X1 được tối ưu cho những người cần một chiếc laptop gọn, mạnh và đẹp. Khung máy kim loại, bàn phím hành trình sâu, hệ thống tản nhiệt êm cùng màn hình OLED giúp trải nghiệm làm việc dài ngày vẫn thoải mái.</p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <span class="eyebrow">Gợi ý</span>
+        <h2>Sản phẩm liên quan</h2>
+      </div>
+      <div class="product-grid" data-product-section="related"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer compact-footer">
+    <p class="copyright">© 2026 Nova Laptop Store.</p>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
