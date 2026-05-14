@@ -2,19 +2,20 @@
    Nova Laptop Store Styles
    ========================= */
 :root {
-  --bg: #f5f7fb;
-  --surface: #ffffff;
-  --ink: #0b0d12;
-  --muted: #697184;
-  --line: #e5e9f2;
-  --blue: #0071e3;
-  --blue-dark: #0058b8;
-  --black: #050507;
-  --radius: 18px;
-  --radius-sm: 12px;
-  --shadow: 0 20px 60px rgba(15, 23, 42, 0.10);
-  --shadow-soft: 0 12px 30px rgba(15, 23, 42, 0.08);
-  --container: 1180px;
+    --bg: #f5f7fb;
+    --surface: #ffffff;
+    --ink: #0b0d12;
+    --muted: #697184;
+    --line: #e5e9f2;
+    --blue: #0071e3;
+    --blue-dark: #0058b8;
+    --red: #d52b1e;
+    --black: #050507;
+    --radius: 18px;
+    --radius-sm: 12px;
+    --shadow: 0 20px 60px rgba(15, 23, 42, 0.10);
+    --shadow-soft: 0 12px 30px rgba(15, 23, 42, 0.08);
+    --container: 1180px;
 }
 
 * {
@@ -838,7 +839,7 @@ textarea {
 }
 
 .remove-cart {
-  color: #d52b1e;
+  color: var(--red);
   background: #fff1f0;
   border: 0;
   border-radius: 999px;
@@ -857,9 +858,10 @@ textarea {
   border-bottom: 1px solid var(--line);
 }
 
-.summary-total strong {
-  font-size: 20px;
-}
+    .summary-total strong {
+        font-size: 20px;
+        color: var(--red);
+    }
 
 .cart-summary .btn {
   width: 100%;
@@ -904,12 +906,12 @@ textarea {
   display: block;
   min-height: 20px;
   margin-top: 6px;
-  color: #d52b1e;
+  color: var(--red);
 }
 
 .form-field.error input,
 .form-field.error textarea {
-  border-color: #d52b1e;
+  border-color: var(--red);
   box-shadow: 0 0 0 4px rgba(213, 43, 30, 0.08);
 }
 
