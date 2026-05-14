@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Maison Élise - website trang sức cao cấp phong cách boutique Paris với nhẫn, vòng tay, dây chuyền, đồng hồ và editorial luxury."
+    />
+    <meta name="keywords" content="trang sức cao cấp, nhẫn kim cương, vòng tay, dây chuyền, đồng hồ luxury, boutique Paris" />
+    <meta name="author" content="Maison Élise" />
+    <meta property="og:title" content="Maison Élise | Paris Fine Jewelry" />
+    <meta property="og:description" content="Không gian mua sắm trang sức cao cấp, tối giản và thanh lịch." />
+    <meta property="og:type" content="website" />
+    <title>Maison Élise | Paris Fine Jewelry</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true">
+      <div class="loader-mark">ME</div>
+      <span></span>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+      <button class="icon-button menu-toggle" aria-label="Mở menu" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+
+      <nav class="main-nav left-nav" aria-label="Điều hướng chính">
+        <a href="#home" data-link>Trang chủ</a>
+        <a href="#category" data-link>Bộ sưu tập</a>
+        <a href="#category/rings" data-link>Nhẫn</a>
+        <a href="#category/bracelets" data-link>Vòng tay</a>
+      </nav>
+
+      <a class="brand" href="#home" data-link aria-label="Maison Élise trang chủ">
+        <span>Maison</span>
+        <strong>Élise</strong>
+      </a>
+
+      <nav class="main-nav right-nav" aria-label="Danh mục phụ">
+        <a href="#category/necklaces" data-link>Dây chuyền</a>
+        <a href="#category/watches" data-link>Đồng hồ</a>
+        <a href="#blog" data-link>Blog</a>
+      </nav>
+
+      <div class="header-actions" aria-label="Công cụ">
+        <button class="icon-button" aria-label="Tìm kiếm" data-search-open>
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 4 4"></path></svg>
+        </button>
+        <button class="icon-button cart-button" aria-label="Giỏ hàng">
+          <svg viewBox="0 0 24 24"><path d="M7 8h14l-2 10H8L6 4H3"></path><circle cx="9" cy="21" r="1"></circle><circle cx="18" cy="21" r="1"></circle></svg>
+          <span id="cartCount">0</span>
+        </button>
+        <button class="icon-button account-button" aria-label="Tài khoản">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.7-4 4.4-6 8-6s6.3 2 8 6"></path></svg>
+        </button>
+      </div>
+
+      <div class="mega-menu" id="megaMenu">
+        <div>
+          <p class="eyebrow">Maison edit</p>
+          <h3>Bộ sưu tập theo khoảnh khắc</h3>
+        </div>
+        <a href="#category/rings" data-link>Nhẫn đính hôn</a>
+        <a href="#category/bracelets" data-link>Vòng tay biểu tượng</a>
+        <a href="#category/necklaces" data-link>Dây chuyền kim cương</a>
+        <a href="#category/watches" data-link>Đồng hồ nữ</a>
+      </div>
+    </header>
+
+    <aside class="mobile-panel" id="mobilePanel" aria-hidden="true">
+      <button class="icon-button close-panel" aria-label="Đóng menu" data-menu-close>
+        <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+      </button>
+      <a href="#home" data-link>Trang chủ</a>
+      <a href="#category" data-link>Bộ sưu tập</a>
+      <a href="#category/rings" data-link>Nhẫn</a>
+      <a href="#category/bracelets" data-link>Vòng tay</a>
+      <a href="#category/necklaces" data-link>Dây chuyền</a>
+      <a href="#category/watches" data-link>Đồng hồ</a>
+      <a href="#blog" data-link>Blog</a>
+    </aside>
+
+    <div class="search-modal" id="searchModal" aria-hidden="true">
+      <button class="icon-button search-close" aria-label="Đóng tìm kiếm" data-search-close>
+        <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+      </button>
+      <label for="searchInput">Tìm kiếm</label>
+      <input id="searchInput" type="search" placeholder="Nhẫn kim cương, Trinity, đồng hồ..." />
+      <p>Gợi ý: Panther, Diamond Collection, vòng tay champagne.</p>
+    </div>
+
+    <main id="app" tabindex="-1"></main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <a class="brand inverse" href="#home" data-link><span>Maison</span><strong>Élise</strong></a>
+        <p>Fine jewelry house inspired by Parisian quiet luxury, crafted for luminous everyday rituals.</p>
+      </div>
+      <div>
+        <h4>Concierge</h4>
+        <a href="tel:+842812345678">Hotline: +84 28 1234 5678</a>
+        <a href="mailto:concierge@maisonelise.vn">concierge@maisonelise.vn</a>
+        <span>10 Đồng Khởi, Quận 1, TP. Hồ Chí Minh</span>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+      <form class="newsletter">
+        <h4>Newsletter</h4>
+        <label for="newsletterEmail">Nhận private preview</label>
+        <div>
+          <input id="newsletterEmail" type="email" placeholder="Email của bạn" />
+          <button type="submit">Đăng ký</button>
+        </div>
+      </form>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
