@@ -224,7 +224,7 @@ function productCard(product) {
 
 function homeView() {
   return `
-    <section class="hero" style="--hero-img:${heroImage}">
+    <section class="hero" style='background-image:${heroImage}'>
       <div class="hero-content">
         <p class="eyebrow">Paris fine jewelry</p>
         <h1>Quiet brilliance, forever held.</h1>
