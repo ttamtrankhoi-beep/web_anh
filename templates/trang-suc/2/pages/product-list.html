@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collections | Maison Lumiere</title>
+  <meta name="description" content="Kham pha bo suu tap nhan, lac tay, day chuyen va dong ho cao cap Maison Lumiere.">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/product-list.css">
+</head>
+<body class="loading">
+  <div class="preloader"><div class="loader-mark">ML</div></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="icon-btn menu-toggle" data-menu-toggle aria-label="Open menu"><span data-icon="menu"></span></button>
+      <nav class="nav-links"><a href="index.html">Home</a><a href="product-list.html">Collections</a><a href="product-list.html">Rings</a><a href="product-list.html">Bracelets</a></nav>
+      <a class="logo" href="index.html">Maison Lumiere</a>
+      <div class="header-icons"><a class="icon-btn hide-mobile" href="#" aria-label="Search"><span data-icon="search"></span></a><button class="icon-btn hide-mobile" type="button" aria-label="Wishlist"><span data-icon="heart"></span></button><button class="icon-btn" type="button" data-open-cart aria-label="Cart"><span data-icon="cart"></span><span class="cart-count" data-cart-count>0</span></button><a class="icon-btn hide-mobile" href="checkout.html" aria-label="Account"><span data-icon="user"></span></a></div>
+    </div>
+  </header>
+  <div class="mobile-menu" data-mobile-menu><nav><a href="index.html">Home</a><a href="product-list.html">Collections</a><a href="product-list.html">Rings</a><a href="product-list.html">Bracelets</a><a href="product-list.html">Necklaces</a><a href="product-list.html">Watches</a><a href="blog.html">Blog</a><a href="#footer">Contact</a></nav></div>
+
+  <main>
+    <section class="shop-hero"><div class="container"><span class="eyebrow">Luxury ecommerce</span><h1>Collections</h1></div></section>
+    <section class="section">
+      <div class="container shop-layout">
+        <aside class="filters reveal">
+          <div class="filter-group"><h3>Collection</h3><label class="check"><input type="checkbox" data-filter value="Love Collection"> Love Collection</label><label class="check"><input type="checkbox" data-filter value="Trinity"> Trinity</label><label class="check"><input type="checkbox" data-filter value="Diamond Collection"> Diamond Collection</label><label class="check"><input type="checkbox" data-filter value="Panther Collection"> Panther Collection</label></div>
+          <div class="filter-group"><h3>Material</h3><label class="check"><input type="checkbox" data-filter value="18K Gold"> 18K Gold</label><label class="check"><input type="checkbox" data-filter value="White Gold"> White Gold</label><label class="check"><input type="checkbox" data-filter value="Rose Gold"> Rose Gold</label><label class="check"><input type="checkbox" data-filter value="Steel"> Steel</label></div>
+          <div class="filter-group"><h3>Gemstone</h3><label class="check"><input type="checkbox" data-filter value="Diamond"> Diamond</label><label class="check"><input type="checkbox" data-filter value="Crystal"> Crystal</label><label class="check"><input type="checkbox" data-filter value="Pearl"> Pearl</label><label class="check"><input type="checkbox" data-filter value="Onyx"> Onyx</label></div>
+          <div class="filter-group"><h3>Price</h3><label class="check"><input type="checkbox" data-price-filter data-price-max="10000000"> Under 10M</label><label class="check"><input type="checkbox" data-price-filter data-price-min="10000000" data-price-max="20000000"> 10M - 20M</label><label class="check"><input type="checkbox" data-price-filter data-price-min="20000000"> Above 20M</label></div>
+          <div class="filter-group"><h3>Gender</h3><label class="check"><input type="checkbox" data-filter value="Women"> Women</label><label class="check"><input type="checkbox" data-filter value="Unisex"> Unisex</label></div>
+        </aside>
+        <div>
+          <div class="toolbar reveal"><p class="muted">A refined edit of heirloom pieces and modern icons.</p><select data-sort aria-label="Sort products"><option value="newest">Sort newest</option><option value="price-asc">Price ascending</option><option value="price-desc">Price descending</option></select></div>
+          <div class="shop-grid" data-shop-grid></div>
+          <nav class="pagination" aria-label="Pagination"><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a></nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer"><div class="container footer-grid"><div><div class="footer-logo">Maison Lumiere</div><p>Luxury jewelry with Parisian restraint and modern heirloom energy.</p></div><div class="footer-col"><h4>Maison</h4><a href="product-list.html">Collections</a><a href="blog.html">Journal</a><a href="checkout.html">Client care</a></div><div class="footer-col"><h4>Contact</h4><p>Paris atelier, Saigon concierge</p><p>care@maisonlumiere.test</p></div><div class="footer-col"><h4>Newsletter</h4><form class="newsletter"><input type="email" placeholder="Email address" aria-label="Email address"><button>Join</button></form></div></div><div class="container copyright">Copyright 2026 Maison Lumiere.</div></footer>
+  <div class="mini-cart" data-mini-cart><aside class="mini-cart-panel"><div class="drawer-head"><h3>Your Cart</h3><button class="close-btn" data-close-cart>&times;</button></div><div class="mini-cart-items" data-mini-cart-items></div><div class="drawer-foot"><div class="drawer-total"><span>Total</span><strong data-mini-cart-total>0</strong></div><a class="luxury-btn" href="checkout.html">Checkout</a></div></aside></div>
+  <div class="quick-view" data-quick-modal><div class="quick-view-card"><button class="close-btn" data-close-quick style="position:absolute;right:16px;top:10px">&times;</button><img data-quick-image alt=""><div class="quick-view-body"><span class="eyebrow">Quick View</span><h3 data-quick-title></h3><div class="detail-price" data-quick-price></div><p class="muted" data-quick-description></p><button class="luxury-btn" data-quick-add>Add to cart</button></div></div></div>
+  <script src="../assets/js/product.js"></script><script src="../assets/js/cart.js"></script><script src="../assets/js/app.js"></script>
+</body>
+</html>

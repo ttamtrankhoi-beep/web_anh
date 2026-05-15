@@ -1,0 +1,121 @@
+.shop-hero,
+.blog-hero {
+  min-height: 430px;
+  display: grid;
+  place-items: end start;
+  color: var(--ivory);
+  background:
+    linear-gradient(90deg, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.24)),
+    url("https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=1800&q=85") center/cover;
+  padding: 150px 0 70px;
+}
+
+.shop-hero h1,
+.blog-hero h1 {
+  margin: 10px 0 0;
+  font-size: clamp(56px, 10vw, 120px);
+}
+
+.shop-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 54px;
+}
+
+.filters {
+  position: sticky;
+  top: 104px;
+  align-self: start;
+  border-right: 1px solid var(--line);
+  padding-right: 26px;
+}
+
+.filter-group {
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 22px;
+  margin-bottom: 22px;
+}
+
+.filter-group h3 {
+  margin: 0 0 12px;
+  font-size: 25px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 8px 0;
+  color: var(--gray);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  gap: 18px;
+}
+
+.toolbar select {
+  min-width: 220px;
+  border: 1px solid var(--line);
+  background: transparent;
+  padding: 12px 14px;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 54px;
+}
+
+.pagination a {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+}
+
+.pagination a.active,
+.pagination a:hover {
+  border-color: var(--gold);
+  background: var(--gold);
+}
+
+@media (max-width: 1120px) {
+  .shop-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .shop-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    position: static;
+    border-right: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+}

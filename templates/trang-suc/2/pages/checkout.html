@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout | Maison Lumiere</title>
+  <meta name="description" content="Thanh toan don hang trang suc cao cap voi form floating label va tong ket don hang.">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/checkout.css">
+</head>
+<body class="loading">
+  <div class="preloader"><div class="loader-mark">ML</div></div>
+  <header class="site-header header-solid"><div class="header-inner"><button class="icon-btn menu-toggle" data-menu-toggle><span data-icon="menu"></span></button><nav class="nav-links"><a href="index.html">Home</a><a href="product-list.html">Collections</a><a href="cart.html">Cart</a><a href="blog.html">Blog</a></nav><a class="logo" href="index.html">Maison Lumiere</a><div class="header-icons"><button class="icon-btn" data-open-cart><span data-icon="cart"></span><span class="cart-count" data-cart-count>0</span></button></div></div></header>
+  <div class="mobile-menu" data-mobile-menu><nav><a href="index.html">Home</a><a href="product-list.html">Collections</a><a href="cart.html">Cart</a><a href="blog.html">Blog</a></nav></div>
+  <main class="page-shell">
+    <section class="section"><div class="container"><span class="section-kicker reveal">Secure checkout</span><h1 class="section-title reveal">Complete your order</h1><div class="checkout-layout">
+      <form class="reveal">
+        <div class="checkout-section"><h2>Billing info</h2><div class="form-grid"><div class="field"><input placeholder=" " required><label>First name</label></div><div class="field"><input placeholder=" " required><label>Last name</label></div><div class="field"><input type="email" placeholder=" " required><label>Email</label></div><div class="field"><input placeholder=" " required><label>Phone</label></div></div></div>
+        <div class="checkout-section"><h2>Shipping info</h2><div class="field"><input placeholder=" " required><label>Address</label></div><div class="form-grid"><div class="field"><input placeholder=" " required><label>City</label></div><div class="field"><input placeholder=" " required><label>Postal code</label></div></div></div>
+        <div class="checkout-section"><h2>Payment method</h2><div class="payment-methods"><label class="payment-card"><input type="radio" name="payment" checked> COD</label><label class="payment-card"><input type="radio" name="payment"> Bank transfer</label><label class="payment-card"><input type="radio" name="payment"> Credit card</label></div></div>
+        <button class="luxury-btn" type="submit">Place order</button>
+      </form>
+      <aside class="order-summary reveal"><h2>Order summary</h2><div data-checkout-items></div><div class="summary-line total"><span>Total</span><strong data-checkout-total>0</strong></div></aside>
+    </div></div></section>
+  </main>
+  <div class="mini-cart" data-mini-cart><aside class="mini-cart-panel"><div class="drawer-head"><h3>Your Cart</h3><button class="close-btn" data-close-cart>&times;</button></div><div class="mini-cart-items" data-mini-cart-items></div><div class="drawer-foot"><div class="drawer-total"><span>Total</span><strong data-mini-cart-total>0</strong></div><a class="luxury-btn" href="checkout.html">Checkout</a></div></aside></div>
+  <script src="../assets/js/product.js"></script><script src="../assets/js/cart.js"></script><script src="../assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+.detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.75fr);
+  gap: 64px;
+}
+
+.gallery-main {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--cream);
+}
+
+.gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-main:hover img {
+  transform: scale(1.12);
+}
+
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.thumbs button {
+  border: 1px solid transparent;
+  padding: 0;
+  background: var(--cream);
+}
+
+.thumbs button.is-active {
+  border-color: var(--gold);
+}
+
+.thumbs img {
+  aspect-ratio: 1;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-info {
+  position: sticky;
+  top: 112px;
+  align-self: start;
+}
+
+.product-info h1 {
+  font-size: clamp(48px, 6vw, 82px);
+  margin: 12px 0 12px;
+}
+
+.detail-price {
+  font-family: var(--serif);
+  font-size: 34px;
+  color: var(--burgundy);
+}
+
+.option-row {
+  margin: 26px 0;
+}
+
+.option-row label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--gray);
+}
+
+.pill-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill-options button {
+  border: 1px solid var(--line);
+  background: transparent;
+  padding: 10px 16px;
+}
+
+.pill-options button.is-active,
+.pill-options button:hover {
+  border-color: var(--gold);
+  color: var(--burgundy);
+}
+
+.qty-control {
+  width: 138px;
+  display: grid;
+  grid-template-columns: 42px 1fr 42px;
+  border: 1px solid var(--line);
+}
+
+.qty-control button {
+  border: 0;
+  background: transparent;
+}
+
+.qty-control input {
+  border: 0;
+  text-align: center;
+  background: transparent;
+}
+
+.detail-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.tabs {
+  margin-top: 74px;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--line);
+  overflow-x: auto;
+}
+
+.tab-buttons button {
+  border: 0;
+  background: transparent;
+  padding: 16px 18px;
+  color: var(--gray);
+}
+
+.tab-buttons button.is-active {
+  color: var(--black);
+  border-bottom: 1px solid var(--gold);
+}
+
+.tab-panel {
+  display: none;
+  padding: 28px 0;
+  color: var(--gray);
+}
+
+.tab-panel.is-active {
+  display: block;
+}
+
+.related-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 920px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .product-info {
+    position: static;
+  }
+
+  .related-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .detail-actions,
+  .related-row {
+    grid-template-columns: 1fr;
+  }
+}
