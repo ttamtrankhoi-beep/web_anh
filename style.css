@@ -1,8 +1,8 @@
 :root {
-    --navy: #061a2f;
-    --navy-2: #0c2d4d;
-    --blue: #1f7ae0;
-    --cyan: #60d5f8;
+    --navy: #EA4335;
+    --navy-2: #C5221F;
+    --blue: rgba(234, 67, 53,.9);
+    --cyan: rgba(234, 67, 53,.7);
     --white: #ffffff;
     --ink: #132238;
     --muted: #64748b;
@@ -11,7 +11,8 @@
     --shadow: 0 24px 70px rgba(6, 26, 47, 0.14);
     --radius: 8px;
     --container: 1180px;
-    --danger: #e5484d;
+    --danger: #4285F4;
+    --yellow: #FBBC05
 }
 
 * {
@@ -72,10 +73,8 @@ svg {
 }
 
 .section-band {
-  color: var(--white);
-  background:
-    radial-gradient(circle at 88% 12%, rgba(96, 213, 248, 0.24), transparent 34%),
-    linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 54%, #0e4a7c 100%);
+    color: var(--white);
+    background: linear-gradient(135deg, #EA4335 0%, #C5221F 100%);
 }
 
 .section-soft {
@@ -188,9 +187,9 @@ svg {
 }
 
 .btn-primary {
-  color: var(--white);
-  background: linear-gradient(135deg, var(--blue), #2aa8f2);
-  box-shadow: 0 18px 36px rgba(31, 122, 224, 0.28);
+    color: var(--ink);
+    background: var(--yellow);
+    box-shadow: 0 18px 36px rgba(31, 122, 224, 0.28);
 }
 
 .btn-primary:hover {
@@ -224,7 +223,7 @@ svg {
 
 .eyebrow {
   margin: 0 0 14px;
-  color: var(--cyan);
+  /*color: var(--cyan);*/
   font-size: 0.82rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -627,15 +626,15 @@ h3 {
 .contact-copy p {
   max-width: 560px;
   color: rgba(255, 255, 255, 0.78);
-  font-size: 1.08rem;
+
 }
 
 .contact-note {
-  margin-top: 28px;
-  padding: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.08);
+    margin-top: 28px;
+    padding: 22px;
+    box-shadow: 0 16px 48px rgba(6, 26, 47, 0.08);
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .contact-form {
