@@ -1010,7 +1010,7 @@ textarea:focus {
     }
         .slider-dots span.swiper-pagination-bullet-active {
             width: 30px;
-            background: var(--blue);
+            background: var(--yellow);
         }
 .slider-controls {
     display: flex;
