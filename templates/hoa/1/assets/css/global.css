@@ -650,7 +650,7 @@ p {
 }
 
 .fade-up {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(24px);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
